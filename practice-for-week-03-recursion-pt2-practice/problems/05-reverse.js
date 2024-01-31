@@ -24,7 +24,7 @@ function reverse(str) {
   str.join();
 
   // Recursive Step
-  return char.concat(reverse(str))
+  char.concat(reverse(str))
 }
 
 
