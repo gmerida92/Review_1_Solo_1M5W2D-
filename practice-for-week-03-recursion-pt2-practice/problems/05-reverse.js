@@ -15,6 +15,11 @@ reverse(""); // ""
 
 function reverse(str) {
   // Your code here
+  // Base Case: Reached the end of the string
+  if(str.length <= 0) return;
+
+  // Recursive Step
+  return str.split(-1).concat(reverse(str))
 }
 
 
