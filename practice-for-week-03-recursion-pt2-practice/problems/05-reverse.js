@@ -18,8 +18,13 @@ function reverse(str) {
   // Base Case: Reached the end of the string
   if(str.length <= 0) return;
 
+  let char = str.slice(-1);
+  str = str.split();
+  str.pop();
+  str.join();
+
   // Recursive Step
-  return str.split(-1).concat(reverse(str))
+  return char.concat(reverse(str))
 }
 
 
