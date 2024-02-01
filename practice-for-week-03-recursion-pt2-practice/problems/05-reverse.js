@@ -16,7 +16,7 @@ reverse(""); // ""
 function reverse(str) {
   // Your code here
   // Base Case: Reached the end of the string
-  if(str.length === 1) return str;
+  if(str.length === 1 || str.length === 0) return str;
 
   let char = str.slice(-1);
   str = str.split("");
