@@ -24,9 +24,7 @@ function reverse(str) {
   str = str.join("");
 
   // Recursive Step
-  // console.log(char)
   return char.concat(reverse(str))
-  // return str
 }
 
 // console.log(reverse('house'));
