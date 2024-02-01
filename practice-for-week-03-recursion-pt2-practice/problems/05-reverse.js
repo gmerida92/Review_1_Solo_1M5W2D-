@@ -16,19 +16,21 @@ reverse(""); // ""
 function reverse(str) {
   // Your code here
   // Base Case: Reached the end of the string
-  if(str.length <= 0) return;
+  if(str.length === 1) return str;
 
   let char = str.slice(-1);
   str = str.split("");
   str.pop();
-  str.join(",");
+  str = str.join("");
 
   // Recursive Step
-  // char.concat(reverse(str))
-  return str
+  // console.log(char)
+  return char.concat(reverse(str))
+  // return str
 }
 
-console.log(reverse('house'));
+// console.log(reverse('house'));
+// reverse('house')
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
