@@ -19,13 +19,16 @@ function reverse(str) {
   if(str.length <= 0) return;
 
   let char = str.slice(-1);
-  str = str.split();
+  str = str.split("");
   str.pop();
-  str.join();
+  str.join(",");
 
   // Recursive Step
-  char.concat(reverse(str))
+  // char.concat(reverse(str))
+  return str
 }
+
+console.log(reverse('house'));
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
