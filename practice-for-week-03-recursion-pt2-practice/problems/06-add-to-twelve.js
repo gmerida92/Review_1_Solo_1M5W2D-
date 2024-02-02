@@ -16,8 +16,13 @@ addToTwelve([1]); // false
 function addToTwelve(arr) {
   // Your code here
   // Base Case
-  if(!arr) return false;
+  if(!arr || arr.length === 1) return false;
+
   // Recursive Step
+  let pointer = arr.shift()
+  if (pointer + arr[0] === 12) return true
+  
+
 }
 
 console.log(addToTwelve([1, 3, 4, 7, 5]))
